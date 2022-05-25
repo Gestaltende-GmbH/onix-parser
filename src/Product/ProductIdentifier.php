@@ -12,7 +12,7 @@ class ProductIdentifier
     /**
      * ProductIDType
      *
-     * @var CodeListList5
+     * @var CodeList5
      */
     protected $ProductIDType;
 
@@ -62,7 +62,7 @@ class ProductIdentifier
      */
     public function isISBN10()
     {
-        return $this->ProductIDType->getCode() == self::ISBN10_TYPE;
+        return $this->ProductIDType->getCode() === self::ISBN10_TYPE;
     }
 
     /**
@@ -72,7 +72,15 @@ class ProductIdentifier
      */
     public function isISBN13()
     {
-        return $this->ProductIDType->getCode() == self::ISBN13_TYPE;
+        return $this->ProductIDType->getCode() === self::ISBN13_TYPE;
+    }
+
+    /**
+     * @return \Ribal\Onix\CodeList\CodeList5
+     */
+    public function getProductIDType()
+    {
+        return $this->ProductIDType;
     }
 
 }

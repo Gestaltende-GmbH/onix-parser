@@ -10,7 +10,7 @@ class Website
     /**
      * WebsiteRole
      *
-     * @var CodeList
+     * @var CodeList73
      */
     protected $WebsiteRole;
 
@@ -46,7 +46,7 @@ class Website
     /**
      * Get WebsiteRole
      *
-     * @return CodeList
+     * @return \Ribal\Onix\CodeList\CodeList73
      */
     public function getWebsiteRole()
     {

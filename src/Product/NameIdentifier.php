@@ -10,7 +10,7 @@ class NameIdentifier
     /**
      * NameIDType
      *
-     * @var CodeList
+     * @var CodeList44
      */
     protected $NameIDType;
 
@@ -64,7 +64,7 @@ class NameIdentifier
     /**
      * Get NameIDType
      *
-     * @return CodeList
+     * @return CodeList44
      */
     public function getNameIDType()
     {

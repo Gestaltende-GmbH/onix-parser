@@ -14,21 +14,21 @@ class DescriptiveDetail
     /**
      * ProductComposition
      *
-     * @var CodeListList
+     * @var CodeList2
      */
     protected $ProductComposition;
 
     /**
      * ProductForm
      *
-     * @var CodeListList
+     * @var CodeList150
      */
     protected $ProductForm;
 
     /**
      * ProductFormDetail
      *
-     * @var CodeList[]
+     * @var CodeList175[]
      */
     protected $ProductFormDetail = [];
 
@@ -42,7 +42,7 @@ class DescriptiveDetail
     /**
      * ProductContentType
      *
-     * @var ProductContentType[]
+     * @var $ProductContentType[]
      */
     protected $ProductContentType = [];
 
@@ -56,7 +56,7 @@ class DescriptiveDetail
     /**
      * CountryOfManufacture
      *
-     * @var CodeList
+     * @var CodeList91
      */
     protected $CountryOfManufacture;
 
@@ -373,7 +373,7 @@ class DescriptiveDetail
     /**
      * Get ProductComposition
      *
-     * @return CodeList
+     * @return \Ribal\Onix\CodeList\CodeList2
      */
     public function getProductComposition()
     {
@@ -383,7 +383,7 @@ class DescriptiveDetail
     /**
      * Get Product Form
      *
-     * @return CodeList
+     * @return \Ribal\Onix\CodeList\CodeList150
      */
     public function getProductForm()
     {
@@ -443,7 +443,7 @@ class DescriptiveDetail
     /**
      * Get CountryOfManufacture
      *
-     * @return CodeList
+     * @return \Ribal\Onix\CodeList\CodeList91
      */
     public function getCountryOfManufacture()
     {
@@ -453,7 +453,7 @@ class DescriptiveDetail
     /**
      * Get all Contributors
      *
-     * @return void
+     * @return array|\Ribal\Onix\Product\Contributor
      */
     public function getContributor()
     {
@@ -573,7 +573,7 @@ class DescriptiveDetail
     /**
      * Get ProductContentType
      *
-     * @return void
+     * @return array
      */
     public function getProductContentType()
     {

@@ -17,7 +17,7 @@ class Subject
     /**
      * SubjectSchemeIdentifier
      *
-     * @var CodeList
+     * @var CodeList27
      */
     protected $SubjectSchemeIdentifier;
 
@@ -109,7 +109,7 @@ class Subject
     /**
      * Get SubjectSchemeIdentifier
      *
-     * @return CodeList
+     * @return CodeList27
      */
     public function getSubjectSchemeIdentifier()
     {

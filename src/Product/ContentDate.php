@@ -11,7 +11,7 @@ class ContentDate
     /**
      * ContentDateRole
      *
-     * @var CodeList
+     * @var CodeList155
      */
     protected $ContentDateRole;
 
@@ -47,7 +47,7 @@ class ContentDate
     /**
      * Get ContentDateRole
      *
-     * @return CodeList
+     * @return CodeList155
      */
     public function getContentDateRole()
     {

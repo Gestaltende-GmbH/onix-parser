@@ -24,7 +24,7 @@ class SupplyDetail
     /**
      * ProductAvailability
      *
-     * @var CodeList
+     * @var CodeList65
      */
     protected $ProductAvailability;
 
@@ -137,7 +137,7 @@ class SupplyDetail
     /**
      * Get ProductAvailability
      *
-     * @return CodeList
+     * @return CodeList65
      */
     public function getProductAvailability()
     {

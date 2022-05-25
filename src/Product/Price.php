@@ -14,14 +14,14 @@ class Price
     /**
      * PriceType
      *
-     * @var CodeList
+     * @var CodeList58
      */
     protected $PriceType;
 
     /**
      * PriceStatus
      *
-     * @var CodeList
+     * @var CodeList61
      */
     protected $PriceStatus;
 
@@ -35,21 +35,21 @@ class Price
     /**
      * CurrencyCode
      *
-     * @var CodeList
+     * @var CodeList96
      */
     protected $CurrencyCode;
 
     /**
      * PrintedOnProduct
      *
-     * @var CodeList
+     * @var CodeList174
      */
     protected $PrintedOnProduct;
 
     /**
      * PositionOnProduct
      *
-     * @var CodeList
+     * @var CodeList142
      */
     protected $PositionOnProduct;
 
@@ -194,7 +194,7 @@ class Price
     /**
      * Get PriceType
      *
-     * @return CodeList
+     * @return \Ribal\Onix\CodeList\CodeList58
      */
     public function getPriceType()
     {
@@ -204,7 +204,7 @@ class Price
     /**
      * Get PriceStatus
      *
-     * @return CodeList
+     * @return \Ribal\Onix\CodeList\CodeList61
      */
     public function getPriceStatus()
     {
@@ -224,7 +224,7 @@ class Price
     /**
      * Get CurrencyCode
      *
-     * @return CodeList
+     * @return \Ribal\Onix\CodeList\CodeList96
      */
     public function getCurrencyCode()
     {
@@ -234,7 +234,7 @@ class Price
     /**
      * Get PrintedOnProduct
      *
-     * @return CodeList
+     * @return \Ribal\Onix\CodeList\CodeList174
      */
     public function getPrintedOnProduct()
     {
@@ -244,7 +244,7 @@ class Price
     /**
      * Get PositionOnProduct
      *
-     * @return CodeList
+     * @return \Ribal\Onix\CodeList\CodeList142
      */
     public function getPositionOnProduct()
     {

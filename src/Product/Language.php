@@ -11,14 +11,14 @@ class Language
     /**
      * LanguageRole
      *
-     * @var CodeList
+     * @var CodeList22
      */
     protected $LanguageRole;
 
     /**
      * LanguageCode
      *
-     * @var CodeList
+     * @var CodeList74
      */
     protected $LanguageCode;
 
@@ -47,7 +47,7 @@ class Language
     /**
      * Get LanguageRole
      *
-     * @return CodeList
+     * @return \Ribal\Onix\CodeList\CodeList22
      */
     public function getLanguageRole()
     {
@@ -57,7 +57,7 @@ class Language
     /**
      * Get LanguageCode
      *
-     * @return CodeList
+     * @return \Ribal\Onix\CodeList\CodeList74
      */
     public function getLanguageCode()
     {

@@ -10,7 +10,7 @@ class RelatedWork
     /**
      * WorkRelationCode
      *
-     * @var CodeList
+     * @var CodeList164
      */
     protected $WorkRelationCode;
 
@@ -46,7 +46,7 @@ class RelatedWork
     /**
      * Get WorkRelationCode
      *
-     * @return CodeList
+     * @return CodeList164
      */
     public function getWorkRelationCode()
     {

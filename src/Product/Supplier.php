@@ -10,7 +10,7 @@ class Supplier
     /**
      * SupplierRole
      *
-     * @var CodeList
+     * @var CodeList93
      */
     protected $SupplierRole;
 
@@ -82,7 +82,7 @@ class Supplier
     /**
      * Get SupplierRole
      *
-     * @return CodeList
+     * @return CodeList93
      */
     public function getSupplierRole()
     {

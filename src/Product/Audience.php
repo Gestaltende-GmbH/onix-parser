@@ -10,7 +10,7 @@ class Audience
     /**
      * AudienceCodeType
      *
-     * @var CodeList
+     * @var \Ribal\Onix\CodeList\CodeList29
      */
     protected $AudienceCodeType;
 
@@ -46,7 +46,7 @@ class Audience
     /**
      * Get AudienceCodeType
      *
-     * @return CodeList
+     * @return \Ribal\Onix\CodeList\CodeList29
      */
     public function getAudienceCodeType()
     {

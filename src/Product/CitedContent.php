@@ -12,21 +12,21 @@ class CitedContent
     /**
      * CitedContent
      *
-     * @var CodeList
+     * @var \Ribal\Onix\CodeList\CodeList156
      */
     protected $CitedContent;
 
     /**
      * ContentAudience
      *
-     * @var CodeList
+     * @var \Ribal\Onix\CodeList\CodeList154
      */
     protected $ContentAudience;
 
     /**
      * SourceType
      *
-     * @var CodeList
+     * @var \Ribal\Onix\CodeList\CodeList157
      */
     protected $SourceType;
 
@@ -138,7 +138,7 @@ class CitedContent
     /**
      * Get CitedContent
      *
-     * @return CodeList
+     * @return \Ribal\Onix\CodeList\CodeList
      */
     public function getCitedContent()
     {
@@ -148,7 +148,7 @@ class CitedContent
     /**
      * Get ContentAudience
      *
-     * @return void
+     * @return \Ribal\Onix\CodeList\CodeList
      */
     public function getContentAudience()
     {
@@ -158,7 +158,7 @@ class CitedContent
     /**
      * Get SourceType
      *
-     * @return CodeList
+     * @return \Ribal\Onix\CodeList\CodeList
      */
     public function getSourceType()
     {

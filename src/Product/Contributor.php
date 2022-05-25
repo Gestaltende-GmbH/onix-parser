@@ -20,7 +20,7 @@ class Contributor
     /**
      * ContributorRole
      *
-     * @var CodeList
+     * @var CodeList17
      */
     protected $ContributorRole;
 
@@ -131,7 +131,7 @@ class Contributor
     /**
      * Get ContributorRole
      *
-     * @return CodeList
+     * @return CodeList17
      */
     public function getContributorRole()
     {
@@ -151,7 +151,7 @@ class Contributor
     /**
      * Get NamesBeforeKey
      *
-     * @return void
+     * @return string
      */
     public function getNamesBeforeKey()
     {

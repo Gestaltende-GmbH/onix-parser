@@ -46,7 +46,8 @@ class CodeListNormalizer implements NormalizerInterface, DenormalizerInterface
      * @param CodeList $data
      * @param string $format
      * @param array $context
-     * @return void
+     *
+     * @return string
      */
     public function normalize($data, $format = null, array $context = [])
     {
@@ -75,7 +76,7 @@ class CodeListNormalizer implements NormalizerInterface, DenormalizerInterface
      * @param CodeList $type
      * @param string $format
      * @param array $context
-     * @return CodeListList
+     * @return \Ribal\Onix\CodeList\CodeList
      */
     public function denormalize($data, $type, $format = null, array $context = [])
     {

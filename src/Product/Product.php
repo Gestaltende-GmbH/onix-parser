@@ -18,14 +18,14 @@ class Product
     /**
      * NotificationType (Early Notification by default)
      *
-     * @var CodeList
+     * @var CodeList1
      */
     protected $NotificationType;
 
     /**
      * RecordSourceType
      *
-     * @var string
+     * @var CodeList3
      */
     protected $RecordSourceType;
 
@@ -230,7 +230,7 @@ class Product
     /**
      * Get the Notification Type
      *
-     * @return \Ribal\Onix\Code
+     * @return \Ribal\Onix\CodeList\CodeList1
      */
     public function getNotificationType()
     {

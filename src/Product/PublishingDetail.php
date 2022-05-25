@@ -19,7 +19,7 @@ class PublishingDetail
     /**
      * CountryOfPublication
      *
-     * @var CodeList
+     * @var CodeList91
      */
     protected $CountryOfPublication;
 
@@ -33,7 +33,7 @@ class PublishingDetail
     /**
      * PublishingStatus
      *
-     * @var CodeList
+     * @var CodeList64
      */
     protected $PublishingStatus;
 
@@ -54,7 +54,7 @@ class PublishingDetail
     /**
      * ROWSalesRightsType
      *
-     * @var CodeList
+     * @var CodeList46
      */
     protected $ROWSalesRightsType;
 
@@ -166,7 +166,7 @@ class PublishingDetail
     /**
      * Get CountryOfPublication
      *
-     * @return CodeList
+     * @return \Ribal\Onix\CodeList\CodeList91
      */
     public function getCountryOfPublication()
     {
@@ -186,7 +186,7 @@ class PublishingDetail
     /**
      * Get PublishingStatus
      *
-     * @return CodeList
+     * @return \Ribal\Onix\CodeList\CodeList64
      */
     public function getPublishingStatus()
     {
@@ -216,7 +216,7 @@ class PublishingDetail
     /**
      * Get ROWSalesRightsType
      *
-     * @return CodeList
+     * @return \Ribal\Onix\CodeList\CodeList46
      */
     public function getROWSalesRightsType()
     {

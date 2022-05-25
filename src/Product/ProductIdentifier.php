@@ -26,7 +26,7 @@ class ProductIdentifier
     /**
      * Set ProductIDType
      *
-     * @param string $value
+     * @param CodeList5 $ProductIDType
      * @return void
      */
     public function setProductIDType(CodeList5 $ProductIDType)

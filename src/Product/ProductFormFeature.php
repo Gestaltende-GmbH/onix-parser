@@ -11,14 +11,14 @@ class ProductFormFeature
     /**
      * ProductFormFeatureType
      *
-     * @var CodeList
+     * @var CodeList79
      */
     protected $ProductFormFeatureType;
 
     /**
      * ProductFormFeatureValue
      *
-     * @var CodeList
+     * @var CodeList98
      */
     protected $ProductFormFeatureValue;
 
@@ -65,7 +65,7 @@ class ProductFormFeature
     /**
      * Get ProductFormFeatureType
      *
-     * @return CodeList
+     * @return \Ribal\Onix\CodeList\CodeList79
      */
     public function getProductFormFeatureType()
     {
@@ -75,7 +75,7 @@ class ProductFormFeature
     /**
      * Get ProductFormFeatureValue
      *
-     * @return CodeList
+     * @return \Ribal\Onix\CodeList\CodeList98
      */
     public function getProductFormFeatureValue()
     {

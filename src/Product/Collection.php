@@ -10,7 +10,7 @@ class Collection
     /**
      * CollectionType
      *
-     * @var CodeList
+     * @var \Ribal\Onix\CodeList\CodeList148
      */
     protected $CollectionType;
 

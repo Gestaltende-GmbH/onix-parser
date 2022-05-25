@@ -11,14 +11,14 @@ class Tax
     /**
      * TaxType
      *
-     * @var CodeList
+     * @var CodeList171
      */
     protected $TaxType;
 
     /**
      * TaxRateCode
      *
-     * @var CodeList
+     * @var CodeList62
      */
     protected $TaxRateCode;
 
@@ -101,7 +101,7 @@ class Tax
     /**
      * Get TaxType
      *
-     * @return CodeList
+     * @return \Ribal\Onix\CodeList\CodeList171
      */
     public function getTaxType()
     {
@@ -111,7 +111,7 @@ class Tax
     /**
      * Get TaxRateCode
      *
-     * @return CodeList
+     * @return \Ribal\Onix\CodeList\CodeList62
      */
     public function getTaxRateCode()
     {

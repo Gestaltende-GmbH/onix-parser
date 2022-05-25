@@ -10,7 +10,7 @@ class ProductClassification
     /**
      * ProductClassificationType
      *
-     * @var CodeList
+     * @var CodeList9
      */
     protected $ProductClassificationType;
 
@@ -46,7 +46,7 @@ class ProductClassification
     /**
      * Get ProductClassificationType
      *
-     * @return CodeList
+     * @return CodeList9
      */
     public function getProductClassificationType()
     {

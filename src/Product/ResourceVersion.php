@@ -10,7 +10,7 @@ class ResourceVersion
     /**
      * ResourceForm
      *
-     * @var CodeList
+     * @var CodeList161
      */
     protected $ResourceForm;
 
@@ -46,7 +46,7 @@ class ResourceVersion
     /**
      * Get ResourceForm
      *
-     * @return CodeList
+     * @return CodeList161
      */
     public function getResourceForm()
     {

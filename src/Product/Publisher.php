@@ -10,7 +10,7 @@ class Publisher
     /**
      * PublishingRole
      *
-     * @var CodeList
+     * @var CodeList45
      */
     protected $PublishingRole;
 
@@ -97,7 +97,7 @@ class Publisher
     /**
      * Get PublishingRole
      *
-     * @return CodeList
+     * @return CodeList45
      */
     public function getPublishingRole()
     {

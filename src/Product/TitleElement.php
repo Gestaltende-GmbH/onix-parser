@@ -17,7 +17,7 @@ class TitleElement
     /**
      * TitleElementLevel
      *
-     * @var CodeList
+     * @var CodeList149
      */
     protected $TitleElementLevel;
 
@@ -136,7 +136,7 @@ class TitleElement
     /**
      * Get SequenceNumber
      *
-     * @return void
+     * @return string
      */
     public function getSequenceNumber()
     {
@@ -146,7 +146,7 @@ class TitleElement
     /**
      * TitleElementLevel
      *
-     * @return void
+     * @return \Ribal\Onix\CodeList\CodeList149
      */
     public function getTitleElementLevel()
     {
@@ -156,7 +156,7 @@ class TitleElement
     /**
      * Get TitlePrefix
      *
-     * @return void
+     * @return string
      */
     public function getTitlePrefix()
     {

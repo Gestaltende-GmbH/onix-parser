@@ -16,7 +16,7 @@ class Measure
     /**
      * MeasureType
      *
-     * @var CodeList
+     * @var CodeList48
      */
     protected $MeasureType;
 
@@ -30,7 +30,7 @@ class Measure
     /**
      * MeasureUnitCode
      *
-     * @var CodeList
+     * @var CodeList50
      */
     protected $MeasureUnitCode;
 
@@ -70,7 +70,7 @@ class Measure
     /**
      * Get MeasureType
      *
-     * @return CodeList
+     * @return \Ribal\Onix\CodeList\CodeList48
      */
     public function getMeasureType()
     {
@@ -90,7 +90,7 @@ class Measure
     /**
      * Get MeasureUnitCode
      *
-     * @return CodeList
+     * @return \Ribal\Onix\CodeList\CodeList50
      */
     public function getMeasureUnitCode()
     {

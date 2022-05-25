@@ -24,8 +24,8 @@ class TextNormalizer implements NormalizerInterface, DenormalizerInterface
     public function denormalize($data, $type, $format = null, array $context = [])
     {
 
-        $textFormat = isset($data['@textformat']) ? $data['@textformat'] : Text::TYPE_DEFAULT;
-        $language = isset($data['@language']) ? $data['@language'] : null;
+        $textFormat = $data['@textformat'] ?? Text::TYPE_DEFAULT;
+        $language = $data['@language'] ?? null;
         $content = is_array($data) ? $data['#'] : $data;
 
         if ($content == null) {

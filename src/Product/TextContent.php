@@ -15,14 +15,14 @@ class TextContent
     /**
      * Type of the Text
      *
-     * @var CodeList
+     * @var CodeList153
      */
     protected $TextType;
 
     /**
      * ContentAudience
      *
-     * @var CodeList
+     * @var CodeList154
      */
     protected $ContentAudience;
 
@@ -87,7 +87,7 @@ class TextContent
     /**
      * Get TextType
      *
-     * @return CodeList
+     * @return \Ribal\Onix\CodeList\CodeList153
      */
     public function getTextType()
     {
@@ -97,7 +97,7 @@ class TextContent
     /**
      * Get ContentAudience
      *
-     * @return CodeList
+     * @return \Ribal\Onix\CodeList\CodeList154
      */
     public function getContentAudience()
     {
@@ -107,7 +107,7 @@ class TextContent
     /**
      * Get SourceTitle
      *
-     * @return void
+     * @return string
      */
     public function getSourceTitle()
     {
@@ -117,7 +117,7 @@ class TextContent
     /**
      * Get the actual Text
      *
-     * @return Text
+     * @return string
      */
     public function getText()
     {

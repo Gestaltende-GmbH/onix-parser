@@ -1,5 +1,5 @@
 {
-    "name": "gestaltende-gmbh/onix",
+    "name": "ribal/onix",
     "description": "An ONIX 3.0 Parser",
     "type": "library",
     "license": "MIT",
@@ -11,9 +11,9 @@
         }
     ],
     "require": {
-        "symfony/serializer": "^5.4",
-        "symfony/property-info": "^5.4",
-        "symfony/property-access": "^5.4"
+        "symfony/serializer": "^4.4|^5.4",
+        "symfony/property-info": "^4.4|^5.4",
+        "symfony/property-access": "^4.4|^5.4"
     },
     "autoload": {
         "psr-4": {

@@ -484,11 +484,15 @@ class DescriptiveDetail
     /**
      * Get all Contributors
      *
-     * @return array|\Ribal\Onix\Product\Contributor
+     * @return array|\Ribal\Onix\Product\Contributor[]
      */
     public function getContributor()
     {
-        return $this->Contributor;
+        if (is_array($this->Contributor)) {
+            return $this->Contributor;
+        }
+
+        return $this->Contributor !== null ? [$this->Contributor] : null;
     }
 
     /**

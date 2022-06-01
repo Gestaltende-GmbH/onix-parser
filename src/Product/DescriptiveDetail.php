@@ -31,7 +31,12 @@ class DescriptiveDetail
      * @var CodeList175[]
      */
     protected $ProductFormDetail = [];
-
+    /**
+     * ProductFormDescription
+     *
+     * @var string[]
+     */
+    protected $ProductFormDescription = [];
     /**
      * ProductFormFeature
      *
@@ -42,7 +47,7 @@ class DescriptiveDetail
     /**
      * ProductContentType
      *
-     * @var $ProductContentType[]
+     * @var $ProductContentType []
      */
     protected $ProductContentType = [];
 
@@ -133,7 +138,8 @@ class DescriptiveDetail
     /**
      * Set ProductComposition
      *
-     * @param string $ProductComposition
+     * @param \Ribal\Onix\CodeList\CodeList2 $ProductComposition
+     *
      * @return void
      */
     public function setProductComposition(CodeList2 $ProductComposition)
@@ -144,7 +150,8 @@ class DescriptiveDetail
     /**
      * Set Product Form
      *
-     * @param string $ProductForm
+     * @param \Ribal\Onix\CodeList\CodeList150 $ProductForm
+     *
      * @return void
      */
     public function setProductForm(CodeList150 $ProductForm)
@@ -155,7 +162,8 @@ class DescriptiveDetail
     /**
      * Set ProductFormDetail
      *
-     * @param CodeList $ProductFormDetail
+     * @param CodeList175 $ProductFormDetail
+     *
      * @return void
      */
     public function addProductFormDetail(CodeList175 $ProductFormDetail)
@@ -167,6 +175,7 @@ class DescriptiveDetail
      * Add ProductFormFeature
      *
      * @param ProductFormFeature $ProductFormFeature
+     *
      * @return void
      */
     public function addProductFormFeature(ProductFormFeature $ProductFormFeature)
@@ -178,6 +187,7 @@ class DescriptiveDetail
      * PrimaryContentType
      *
      * @param string $ProductContentType
+     *
      * @return void
      */
     /*public function addProductContentType(CodeList81 $ProductContentType)
@@ -188,7 +198,8 @@ class DescriptiveDetail
     /**
      * PrimaryContentType
      *
-     * @param string $ProductContentType
+     * @param CodeList81 $ProductContentType
+     *
      * @return void
      */
     public function addProductContentType(CodeList81 $ProductContentType)
@@ -200,6 +211,7 @@ class DescriptiveDetail
      * Add Measure
      *
      * @param Measure $Measure
+     *
      * @return void
      */
     public function addMeasure(Measure $Measure)
@@ -211,17 +223,18 @@ class DescriptiveDetail
      * Remove Measure
      *
      * @param Measure $Measure
+     *
      * @return void
      */
     public function removeMeasure(Measure $Measure)
     {
-        
     }
 
     /**
      * Set CountryOfManufacture
      *
-     * @param string $CountryOfManufacture
+     * @param CodeList91 $CountryOfManufacture
+     *
      * @return void
      */
     public function setCountryOfManufacture(CodeList91 $CountryOfManufacture)
@@ -233,6 +246,7 @@ class DescriptiveDetail
      * Add a TitleDetail
      *
      * @param TitleDetail $TitleDetail
+     *
      * @return void
      */
     public function addTitleDetail(TitleDetail $TitleDetail)
@@ -244,6 +258,7 @@ class DescriptiveDetail
      * Remove a TitleDetail
      *
      * @param TitleDetail $TitleDetail
+     *
      * @return void
      */
     public function removeTitleDetail(TitleDetail $TitleDetail)
@@ -254,6 +269,7 @@ class DescriptiveDetail
      * Add Contributor
      *
      * @param Contributor $Contributor
+     *
      * @return void
      */
     public function addContributor(Contributor $Contributor)
@@ -265,6 +281,7 @@ class DescriptiveDetail
      * Remove Contributor
      *
      * @param Contributor $Contributor
+     *
      * @return void
      */
     public function removeContributor(Contributor $Contributor)
@@ -275,6 +292,7 @@ class DescriptiveDetail
      * Set ContributorStatement
      *
      * @param string $ContributorStatement
+     *
      * @return void
      */
     public function setContributorStatement(string $ContributorStatement)
@@ -286,6 +304,7 @@ class DescriptiveDetail
      * EditionNumber
      *
      * @param integer $EditionNumber
+     *
      * @return void
      */
     public function setEditionNumber(string $EditionNumber)
@@ -297,6 +316,7 @@ class DescriptiveDetail
      * Add new Extent
      *
      * @param Extent $Extent
+     *
      * @return void
      */
     public function addExtent(Extent $Extent)
@@ -308,6 +328,7 @@ class DescriptiveDetail
      * Add Subject
      *
      * @param Subject $Subject
+     *
      * @return void
      */
     public function addSubject(Subject $Subject)
@@ -319,6 +340,7 @@ class DescriptiveDetail
      * Set ProductClassification
      *
      * @param ProductClassification $ProductClassification
+     *
      * @return void
      */
     public function setProductClassification(ProductClassification $ProductClassification)
@@ -330,17 +352,19 @@ class DescriptiveDetail
      * Add Collection
      *
      * @param Collection $Collection
+     *
      * @return void
      */
     public function addCollection(Collection $Collection)
     {
         $this->Collection[] = $Collection;
     }
-    
+
     /**
      * Remove Collection
      *
      * @param Collection $Collection
+     *
      * @return void
      */
     public function removeCollection(Collection $Collection)
@@ -352,6 +376,7 @@ class DescriptiveDetail
      * Add Audience
      *
      * @param Audience $Audience
+     *
      * @return void
      */
     public function addAudience(Audience $Audience)
@@ -363,6 +388,7 @@ class DescriptiveDetail
      * Add Language
      *
      * @param Language $Language
+     *
      * @return void
      */
     public function addLanguage(Language $Language)
@@ -399,7 +425,7 @@ class DescriptiveDetail
     {
         return $this->ProductFormDetail;
     }
-    
+
     /**
      * Remove ProductFormDetail
      *
@@ -407,7 +433,6 @@ class DescriptiveDetail
      */
     public function removeProductFormDetail(CodeList175 $ProductFormDetail)
     {
-
     }
 
     /**
@@ -429,7 +454,7 @@ class DescriptiveDetail
     {
         return $this->Measure;
     }
-    
+
     /**
      * Get all Measures
      *
@@ -437,7 +462,7 @@ class DescriptiveDetail
      */
     public function getMeasures()
     {
-    	return $this->Measure;
+        return $this->Measure;
     }
 
     /**
@@ -519,7 +544,7 @@ class DescriptiveDetail
     {
         return $this->Subject;
     }
-    
+
     /**
      * Get all Subjects
      *
@@ -527,13 +552,14 @@ class DescriptiveDetail
      */
     public function getSubjects()
     {
-    	return $this->Subject;
+        return $this->Subject;
     }
 
     /**
      * Remove Subject
      *
      * @param Subject $Subject
+     *
      * @return void
      */
     public function removeSubject(Subject $Subject)
@@ -584,6 +610,7 @@ class DescriptiveDetail
      * Remove Audience
      *
      * @param Audience $Audience
+     *
      * @return void
      */
     public function removeAudience(Audience $Audience)
@@ -604,6 +631,7 @@ class DescriptiveDetail
      * Remove Language
      *
      * @param Language $language
+     *
      * @return void
      */
     public function removeLanguage(Language $language)
@@ -618,12 +646,13 @@ class DescriptiveDetail
      * Remove a ProductFormFeature
      *
      * @param ProductFormFeature
+     *
      * @return array
      */
     public function removeProductFormFeature(ProductFormFeature $ProductFormFeature)
     {
     }
-    
+
     /**
      * Get the height measure of the product, if set
      *
@@ -631,13 +660,13 @@ class DescriptiveDetail
      */
     public function getHeight()
     {
-    	foreach ($this->Measure as $measure) {
-    		if ($measure->isHeight()) {
-    			return $measure;
-    		}
-    	}    
+        foreach ($this->Measure as $measure) {
+            if ($measure->isHeight()) {
+                return $measure;
+            }
+        }
     }
-    
+
     /**
      * Get the width measure of the product, if set
      *
@@ -645,13 +674,13 @@ class DescriptiveDetail
      */
     public function getWidth()
     {
-    	foreach ($this->Measure as $measure) {
-    		if ($measure->isWidth()) {
-    			return $measure;
-    		}
-    	}    
+        foreach ($this->Measure as $measure) {
+            if ($measure->isWidth()) {
+                return $measure;
+            }
+        }
     }
-    
+
     /**
      * Get the thickness measure of the product, if set
      *
@@ -659,13 +688,13 @@ class DescriptiveDetail
      */
     public function getThickness()
     {
-    	foreach ($this->Measure as $measure) {
-    		if ($measure->isThickness()) {
-    			return $measure;
-    		}
-    	}    
+        foreach ($this->Measure as $measure) {
+            if ($measure->isThickness()) {
+                return $measure;
+            }
+        }
     }
-    
+
     /**
      * Get the weight measure of the product, if set
      *
@@ -673,13 +702,13 @@ class DescriptiveDetail
      */
     public function getWeight()
     {
-    	foreach ($this->Measure as $measure) {
-    		if ($measure->isWeight()) {
-    			return $measure;
-    		}
-    	}    
+        foreach ($this->Measure as $measure) {
+            if ($measure->isWeight()) {
+                return $measure;
+            }
+        }
     }
-    
+
     /**
      * Get all contributors marked as authors
      *
@@ -687,9 +716,25 @@ class DescriptiveDetail
      */
     public function getAuthors()
     {
-    	return array_filter($this->Contributor, function ($contributor) {
-    		return $contributor->isAuthor();
-    	});
+        return array_filter($this->Contributor, function ($contributor) {
+            return $contributor->isAuthor();
+        });
+    }
+
+    /**
+     * @return string[]
+     */
+    public function getProductFormDescription()
+    {
+        return $this->ProductFormDescription;
+    }
+
+    /**
+     * @param string[] $ProductFormDescription
+     */
+    public function setProductFormDescription(array $ProductFormDescription): void
+    {
+        $this->ProductFormDescription = $ProductFormDescription;
     }
 
 }

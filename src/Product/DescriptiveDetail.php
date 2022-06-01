@@ -34,9 +34,9 @@ class DescriptiveDetail
     /**
      * ProductFormDescription
      *
-     * @var string[]
+     * @var string|array
      */
-    protected $ProductFormDescription = [];
+    protected $ProductFormDescription;
     /**
      * ProductFormFeature
      *
@@ -128,6 +128,12 @@ class DescriptiveDetail
      */
     protected $Collection = [];
 
+    /**
+     * Array of Collections
+     *
+     * @var mixed
+     */
+    protected $NoCollection;
     /**
      * Array of Audiences
      *
@@ -722,7 +728,7 @@ class DescriptiveDetail
     }
 
     /**
-     * @return string[]
+     * @return string|array
      */
     public function getProductFormDescription()
     {
@@ -730,11 +736,27 @@ class DescriptiveDetail
     }
 
     /**
-     * @param string[] $ProductFormDescription
+     * @param string|array $ProductFormDescription
      */
-    public function setProductFormDescription(array $ProductFormDescription): void
+    public function setProductFormDescription($ProductFormDescription): void
     {
         $this->ProductFormDescription = $ProductFormDescription;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getNoCollection()
+    {
+        return $this->NoCollection !== null;
+    }
+
+    /**
+     * @param mixed $NoCollection
+     */
+    public function setNoCollection($NoCollection): void
+    {
+        $this->NoCollection = $NoCollection;
     }
 
 }

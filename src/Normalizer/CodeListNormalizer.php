@@ -9,23 +9,23 @@ use Symfony\Component\Serializer\Normalizer\NormalizerInterface;
 class CodeListNormalizer implements NormalizerInterface, DenormalizerInterface
 {
 
-	/**
-	 * Language to get code files for
-	 *
-	 * @var string
-	 */
-	private $language = 'en';
+    /**
+     * Language to get code files for
+     *
+     * @var string
+     */
+    private $language = 'en';
 
-	/**
-	 * Constructor function
-	 *
-	 * @param string
-	 * @return void
-	 */
-	public function __construct(string $language = 'en')
-	{
-		$this->language = $language;
-	}
+    /**
+     * Constructor function
+     *
+     * @param string
+     * @return void
+     */
+    public function __construct(string $language = 'en')
+    {
+        $this->language = $language;
+    }
 
     /**
      * Check if the current object is a CodeList to be normalized

@@ -6,12 +6,12 @@ use Symfony\Component\Serializer\NameConverter\NameConverterInterface;
 
 /**
  * Short to Ref Tag Converter
- * 
+ *
  * ONIX 3.0 files come in two formats: short and ref.
  * Short formatted files are specially coded and therefore
  * almost unreadable. This converter get's the real names for
  * the short Tags.
- * 
+ *
  * @author Chris Ribal <c.ribal@ribal-webentwicklung.de>
  */
 class ShortTagNameConverter implements NameConverterInterface

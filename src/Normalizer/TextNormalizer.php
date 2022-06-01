@@ -12,18 +12,18 @@ class TextNormalizer implements NormalizerInterface, DenormalizerInterface
 
     /**
      * {@inheritDoc}
+     * @return array|string|int|float|bool|\ArrayObject|null
      */
     public function normalize($object, $format = null, array $context = [])
     {
-
     }
 
     /**
      * {@inheritDoc}
+     * @return mixed
      */
     public function denormalize($data, $type, $format = null, array $context = [])
     {
-
         $textFormat = $data['@textformat'] ?? Text::TYPE_DEFAULT;
         $language = $data['@language'] ?? null;
         $content = is_array($data) ? $data['#'] : $data;
@@ -33,19 +33,19 @@ class TextNormalizer implements NormalizerInterface, DenormalizerInterface
         }
 
         return new Text($content, $textFormat, $language);
-
     }
 
     /**
      * {@inheritDoc}
+     * @return bool
      */
     public function supportsNormalization($data, $format = null)
     {
-
     }
 
     /**
      * {@inheritDoc}
+     * @return bool
      */
     public function supportsDenormalization($data, $type, $format = null)
     {

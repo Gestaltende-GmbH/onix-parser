@@ -11,11 +11,15 @@ class ONIXEncoder extends XmlEncoder
 {
 
     /**
-     * {@inheritdoc}
+     * @param       $data
+     * @param       $format
+     * @param array $context
+     *
+     * @return array|mixed|string
      */
     public function decode($data, $format, array $context = [])
     {
-        
+
         if ('' === trim($data)) {
             throw new NotEncodableValueException('Invalid XML data, it can not be empty.');
         }
@@ -31,13 +35,13 @@ class ONIXEncoder extends XmlEncoder
         $data = $dom->saveXML();
 
         return parent::decode($data, $format, $context);
-        
+
     }
 
     /**
      * Wrap XML/HTML/XHTML nodes into CDATA group, so it's contents will not
      * be processed by any normalizer or serializer.
-     * 
+     *
      * @param DOMNode $node
      * @return void
      */

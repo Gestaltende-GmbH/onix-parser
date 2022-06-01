@@ -53,6 +53,18 @@ class Contributor
     protected $KeyNames;
 
     /**
+     * PersonNamemes
+     *
+     * @var string
+     */
+    protected $PersonName;
+    /**
+     * PersonNameInverted
+     *
+     * @var string
+     */
+    protected $PersonNameInverted;
+    /**
      * Set SequenceNumber
      *
      * @param int $SequenceNumber
@@ -206,6 +218,38 @@ class Contributor
     public function isAuthor()
     {
         return $this->ContributorRole->getCode() === self::CODE_AUTHOR;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPersonNameInverted(): string
+    {
+        return $this->PersonNameInverted;
+    }
+
+    /**
+     * @param string $PersonNameInverted
+     */
+    public function setPersonNameInverted(string $PersonNameInverted): void
+    {
+        $this->PersonNameInverted = $PersonNameInverted;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPersonName(): string
+    {
+        return $this->PersonName;
+    }
+
+    /**
+     * @param string $PersonName
+     */
+    public function setPersonName(string $PersonName): void
+    {
+        $this->PersonName = $PersonName;
     }
 
 }

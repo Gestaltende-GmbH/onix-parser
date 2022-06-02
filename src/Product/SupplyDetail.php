@@ -15,6 +15,13 @@ class SupplyDetail
     protected $Supplier;
 
     /**
+     * Array of SupplyDate
+     *
+     * @var array|Date
+     */
+    protected $SupplyDate = [];
+
+    /**
      * ReturnsConditions
      *
      * @var ReturnsConditions
@@ -162,6 +169,14 @@ class SupplyDetail
     public function getPrice()
     {
         return $this->Price;
+    }
+
+    /**
+     * @return array|\Ribal\Onix\Product\Date
+     */
+    public function getSupplyDate()
+    {
+        return $this->SupplyDate;
     }
 
     /**

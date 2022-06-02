@@ -17,7 +17,7 @@ class SupplyDetail
     /**
      * Array of SupplyDate
      *
-     * @var array|Date
+     * @var array|SupplyDate
      */
     protected $SupplyDate = [];
 
@@ -172,7 +172,7 @@ class SupplyDetail
     }
 
     /**
-     * @return array|\Ribal\Onix\Product\Date
+     * @return array|\Ribal\Onix\Product\SupplyDate
      */
     public function getSupplyDate()
     {

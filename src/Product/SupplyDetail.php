@@ -53,6 +53,7 @@ class SupplyDetail
      * Set Supplier
      *
      * @param Supplier $Supplier
+     *
      * @return void
      */
     public function setSupplier(Supplier $Supplier)
@@ -64,6 +65,7 @@ class SupplyDetail
      * Set ReturnsConditions
      *
      * @param ReturnsConditions $ReturnsConditions
+     *
      * @return void
      */
     public function setReturnsConditions(ReturnsConditions $ReturnsConditions)
@@ -75,6 +77,7 @@ class SupplyDetail
      * Set ProductAvailability
      *
      * @param CodeList65 $ProductAvailability
+     *
      * @return void
      */
     public function setProductAvailability(CodeList65 $ProductAvailability)
@@ -86,6 +89,7 @@ class SupplyDetail
      * Set PackQuantity
      *
      * @param integer $PackQuantity
+     *
      * @return void
      */
     public function setPackQuantity(string $PackQuantity)
@@ -97,11 +101,14 @@ class SupplyDetail
      * Add a new Price
      *
      * @param Price $Price
+     *
      * @return void
      */
     public function setPrice($Price)
     {
-        if (!is_array($Price)) return;
+        if (!is_array($Price)) {
+            return;
+        }
 
         foreach ($Price as $p) {
             if ($p instanceof Price) {
@@ -114,6 +121,7 @@ class SupplyDetail
      * Add Price
      *
      * @param Price $Price
+     *
      * @return void
      */
     public function addPrice(Price $Price)
@@ -183,10 +191,32 @@ class SupplyDetail
      * Remove Price
      *
      * @param Price $Price
+     *
      * @return void
      */
     public function removePrice(Price $Price)
     {
     }
 
+    /**
+     * Add new SupplyDate
+     *
+     * @param SupplyDate $SupplyDate
+     *
+     * @return void
+     */
+    public function addSupplyDate(SupplyDate $SupplyDate)
+    {
+        $this->SupplyDate[] = $SupplyDate;
+    }
+
+    /**
+     * Remove new PublishingDate
+     *
+     * @param SupplyDate $SupplyDate
+     * @return void
+     */
+    public function removeSupplyDate(SupplyDate $SupplyDate)
+    {
+    }
 }

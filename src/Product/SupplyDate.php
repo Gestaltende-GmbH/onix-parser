@@ -2,7 +2,6 @@
 
 namespace Ribal\Onix\Product;
 
-use Ribal\Onix\CodeList\CodeList163;
 use Ribal\Onix\CodeList\CodeList166;
 use Ribal\Onix\Date;
 
@@ -10,9 +9,9 @@ class SupplyDate
 {
 
     /**
-     * PublishingDateRole
+     * SupplyDateRole
      *
-     * @var \Ribal\Onix\CodeList\CodeList166
+     * @var CodeList166
      */
     protected $SupplyDateRole;
 
@@ -26,7 +25,7 @@ class SupplyDate
     /**
      * Set PublishingDateRole
      *
-     * @param \Ribal\Onix\CodeList\CodeList166 $SupplyDateRole
+     * @param CodeList166 $SupplyDateRole
      *
      * @return void
      */
@@ -39,6 +38,7 @@ class SupplyDate
      * Set Date
      *
      * @param Date $Date
+     *
      * @return void
      */
     public function setDate(Date $Date)
@@ -47,7 +47,7 @@ class SupplyDate
     }
 
     /**
-     * Get PublishingDateRole
+     * Get SupplyDateRole
      *
      * @return CodeList166
      */

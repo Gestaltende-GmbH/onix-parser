@@ -140,6 +140,10 @@ class DescriptiveDetail
      * @var array|Audience
      */
     protected $Audience = [];
+    /**
+     * @var string
+     */
+    protected $Illustrated;
 
     /**
      * Set ProductComposition
@@ -761,6 +765,22 @@ class DescriptiveDetail
     public function setNoCollection($NoCollection): void
     {
         $this->NoCollection = $NoCollection;
+    }
+
+    /**
+     * @return string
+     */
+    public function getIllustrated(): string
+    {
+        return $this->Illustrated;
+    }
+
+    /**
+     * @param string $Illustrated
+     */
+    public function setIllustrated(string $Illustrated): void
+    {
+        $this->Illustrated = $Illustrated;
     }
 
 }

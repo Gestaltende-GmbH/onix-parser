@@ -177,4 +177,12 @@ class Date
         // TODO
     }
 
+    /**
+     * @return array|\DateTime[]
+     */
+    public function getDates(): array
+    {
+        return $this->dates;
+    }
+
 }

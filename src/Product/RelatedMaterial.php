@@ -23,6 +23,7 @@ class RelatedMaterial
      * Add new RelatedWork
      *
      * @param RelatedWork $RelatedWork
+     *
      * @return void
      */
     public function addRelatedWork(RelatedWork $RelatedWork)
@@ -34,6 +35,7 @@ class RelatedMaterial
      * Set RelatedProduct
      *
      * @param RelatedProduct $RelatedProduct
+     *
      * @return void
      */
     public function addRelatedProduct(RelatedProduct $RelatedProduct)
@@ -44,27 +46,28 @@ class RelatedMaterial
     /**
      * Get RelatedWork
      *
-     * @return array
+     * @return array|\Ribal\Onix\Product\RelatedWork[]
      */
     public function getRelatedWork()
     {
-        return $this->RelatedWork;
+        return is_array($this->RelatedWork) ? $this->RelatedWork : [$this->RelatedWork];
     }
 
     /**
      * Get RelatedProduct
      *
-     * @return RelatedProduct
+     * @return array|\Ribal\Onix\Product\RelatedProduct[]
      */
     public function getRelatedProduct()
     {
-        return $this->RelatedProduct;
+        return is_array($this->RelatedProduct) ? $this->RelatedProduct : [$this->RelatedProduct];
     }
 
     /**
      * Remove RelatedWork
      *
      * @param RelatedWork $RelatedWork
+     *
      * @return void
      */
     public function removeRelatedWork(RelatedWork $RelatedWork)

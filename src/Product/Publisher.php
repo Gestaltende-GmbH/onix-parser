@@ -17,7 +17,7 @@ class Publisher
     /**
      * PublisherIdentifier
      *
-     * @var array
+     * @var array|\Ribal\Onix\Product\PublisherIdentifier[]
      */
     protected $PublisherIdentifier = [];
 
@@ -39,6 +39,7 @@ class Publisher
      * Set PublishingRole
      *
      * @param CodeList45 $PublishingRole
+     *
      * @return void
      */
     public function setPublishingRole(CodeList45 $PublishingRole)
@@ -49,22 +50,20 @@ class Publisher
     /**
      * Set PublisherIdentifier
      *
-     * @param PublisherIdentifier $PublisherIdentifier
+     * @param \Ribal\Onix\Product\PublisherIdentifier $PublisherIdentifier
+     *
      * @return void
      */
-    public function setPublisherIdentifier($PublisherIdentifier)
+    public function setPublisherIdentifier(PublisherIdentifier $PublisherIdentifier)
     {
-        if (!is_array($PublisherIdentifier)) {
-            $PublisherIdentifier = [$PublisherIdentifier];
-        }
-
-        $this->PublisherIdentifier = array_merge($this->PublisherIdentifier, $PublisherIdentifier);
+        $this->PublisherIdentifier[] = $PublisherIdentifier;
     }
 
     /**
      * Set PublisherIdentifier
      *
      * @param PublisherIdentifier $PublisherIdentifier
+     *
      * @return void
      */
     public function addPublisherIdentifier(PublisherIdentifier $PublisherIdentifier)
@@ -76,6 +75,7 @@ class Publisher
      * Set PublisherName
      *
      * @param string $PublisherName
+     *
      * @return void
      */
     public function setPublisherName(string $PublisherName)
@@ -87,6 +87,7 @@ class Publisher
      * Set Website
      *
      * @param Website $Website
+     *
      * @return void
      */
     public function setWebsite(Website $Website)
@@ -107,7 +108,7 @@ class Publisher
     /**
      * Get PublisherIdentifier
      *
-     * @return PublisherIdentifier
+     * @return \Ribal\Onix\Product\PublisherIdentifier[]
      */
     public function getPublisherIdentifier()
     {

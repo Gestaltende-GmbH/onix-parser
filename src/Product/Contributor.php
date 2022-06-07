@@ -221,9 +221,9 @@ class Contributor
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getPersonNameInverted(): string
+    public function getPersonNameInverted(): ?string
     {
         return $this->PersonNameInverted;
     }
@@ -237,9 +237,9 @@ class Contributor
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getPersonName(): string
+    public function getPersonName(): ?string
     {
         return $this->PersonName;
     }

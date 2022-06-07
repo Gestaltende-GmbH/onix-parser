@@ -46,7 +46,7 @@ class PublisherIdentifier
     /**
      * Get PublisherIDType
      *
-     * @return CodeList44
+     * @return \Ribal\Onix\CodeList\CodeList44
      */
     public function getPublisherIDType()
     {
@@ -60,7 +60,7 @@ class PublisherIdentifier
      */
     public function getIDValue()
     {
-        $this->IDValue = $IDValue;
+        return $this->IDValue;
     }
 
 }

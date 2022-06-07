@@ -2,6 +2,7 @@
 
 namespace Ribal\Onix\Product;
 
+use Ribal\Onix\CodeList\CodeList57;
 use Ribal\Onix\CodeList\CodeList65;
 
 class SupplyDetail
@@ -48,7 +49,10 @@ class SupplyDetail
      * @var Price[]
      */
     protected $Price = [];
-
+    /**
+     * @var \Ribal\Onix\CodeList\CodeList57
+     */
+    protected $UnpricedItemType;
     /**
      * Set Supplier
      *
@@ -188,6 +192,14 @@ class SupplyDetail
     }
 
     /**
+     * @return \Ribal\Onix\CodeList\CodeList57
+     */
+    public function getUnpricedItemType()
+    {
+        return $this->UnpricedItemType;
+    }
+
+    /**
      * Remove Price
      *
      * @param Price $Price
@@ -218,5 +230,13 @@ class SupplyDetail
      */
     public function removeSupplyDate(SupplyDate $SupplyDate)
     {
+    }
+
+    /**
+     * @param \Ribal\Onix\CodeList\CodeList57 $UnpricedItemType
+     */
+    public function setUnpricedItemType(CodeList57 $UnpricedItemType)
+    {
+        $this->UnpricedItemType = $UnpricedItemType;
     }
 }

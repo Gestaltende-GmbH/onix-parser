@@ -146,6 +146,21 @@ class DescriptiveDetail
     protected $Illustrated;
 
     /**
+     * Array of EpubLicense
+     *
+     * @var \Ribal\Onix\Product\EpubLicense
+     */
+    protected $EpubLicense;
+
+    /**
+     * @return \Ribal\Onix\Product\EpubLicense
+     */
+    public function getEpubLicense(): ?EpubLicense
+    {
+        return $this->EpubLicense;
+    }
+
+    /**
      * Set ProductComposition
      *
      * @param \Ribal\Onix\CodeList\CodeList2 $ProductComposition
@@ -781,6 +796,14 @@ class DescriptiveDetail
     public function setIllustrated(string $Illustrated): void
     {
         $this->Illustrated = $Illustrated;
+    }
+
+    /**
+     * @param \Ribal\Onix\Product\EpubLicense $EpubLicense
+     */
+    public function setEpubLicense(EpubLicense $EpubLicense): void
+    {
+        $this->EpubLicense = $EpubLicense;
     }
 
 }

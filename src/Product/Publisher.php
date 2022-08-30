@@ -31,7 +31,7 @@ class Publisher
     /**
      * Website
      *
-     * @var Website
+     * @var array|Website[]
      */
     protected $Website;
 
@@ -72,6 +72,18 @@ class Publisher
     }
 
     /**
+     * Set PublisherIdentifier
+     *
+     * @param \Ribal\Onix\Product\Website $Website
+     *
+     * @return void
+     */
+    public function addWebsite(Website $Website)
+    {
+        $this->Website[] = $Website;
+    }
+
+    /**
      * Set PublisherName
      *
      * @param string $PublisherName
@@ -92,7 +104,7 @@ class Publisher
      */
     public function setWebsite(Website $Website)
     {
-        $this->Website = $Website;
+        $this->Website[] = $Website;
     }
 
     /**
@@ -128,7 +140,7 @@ class Publisher
     /**
      * Get Website
      *
-     * @return Website
+     * @return array|Website[]
      */
     public function getWebsite()
     {
@@ -144,4 +156,12 @@ class Publisher
     {
     }
 
+    /**
+     * Get PublisherIdentifier
+     *
+     * @return Website
+     */
+    public function removeWebsite()
+    {
+    }
 }

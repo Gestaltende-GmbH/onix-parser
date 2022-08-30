@@ -61,7 +61,7 @@ class EpubLicenseExpression
      */
     public function getEpubLicenseExpressionType()
     {
-        return $this->PubliEpubLicenseExpressionTypesherIDType;
+        return $this->EpubLicenseExpressionType;
     }
 
     /**

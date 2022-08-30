@@ -52,6 +52,11 @@ class DescriptiveDetail
     protected $ProductContentType = [];
 
     /**
+     * @var \Ribal\Onix\Product\ProductPart[]
+     */
+    protected $ProductPart = [];
+
+    /**
      * Measure
      *
      * @var array|Measure
@@ -196,6 +201,17 @@ class DescriptiveDetail
         $this->ProductFormDetail[] = $ProductFormDetail;
     }
 
+    /**
+     * Set ProductFormDetail
+     *
+     * @param ProductPart $productPart
+     *
+     * @return void
+     */
+    public function addProductPart(ProductPart $productPart)
+    {
+        $this->ProductPart[] = $productPart;
+    }
     /**
      * Add ProductFormFeature
      *
@@ -457,6 +473,25 @@ class DescriptiveDetail
      * @return void
      */
     public function removeProductFormDetail(CodeList175 $ProductFormDetail)
+    {
+    }
+
+    /**
+     * Get ProductPart
+     *
+     * @return array|ProductPart[]
+     */
+    public function getProductPart()
+    {
+        return $this->ProductPart;
+    }
+
+    /**
+     * Remove ProductPart
+     *
+     * @return void
+     */
+    public function removeProductPart(ProductPart $productPart)
     {
     }
 

@@ -22,9 +22,25 @@ class Website
     protected $WebsiteLink;
 
     /**
+     * WebsiteDescription
+     *
+     * @var string
+     */
+    protected $WebsiteDescription;
+
+    /**
+     * @return string
+     */
+    public function getWebsiteDescription(): ?string
+    {
+        return $this->WebsiteDescription;
+    }
+
+    /**
      * Set WebsiteRole
      *
      * @param CodeList73 $WebsiteRole
+     *
      * @return void
      */
     public function setWebsiteRole(CodeList73 $WebsiteRole)
@@ -36,6 +52,7 @@ class Website
      * Set WebsiteLink
      *
      * @param string $WebsiteLink
+     *
      * @return void
      */
     public function setWebsiteLink(string $WebsiteLink)
@@ -61,6 +78,14 @@ class Website
     public function getWebsiteLink()
     {
         return $this->WebsiteLink;
+    }
+
+    /**
+     * @param string $WebsiteDescription
+     */
+    public function setWebsiteDescription(string $WebsiteDescription): void
+    {
+        $this->WebsiteDescription = $WebsiteDescription;
     }
 
 }

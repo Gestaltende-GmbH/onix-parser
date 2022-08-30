@@ -43,6 +43,12 @@ class Subject
     protected $SubjectHeadingText;
 
     /**
+     * SubjectSchemeName
+     *
+     * @var string
+     */
+    protected $SubjectSchemeName;
+    /**
      * Set as MainSubject
      *
      * @return void
@@ -50,6 +56,14 @@ class Subject
     public function setMainSubject(string $MainSubject)
     {
         $this->MainSubject = true;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSubjectSchemeName()
+    {
+        return $this->SubjectSchemeName;
     }
 
     /**
@@ -144,6 +158,14 @@ class Subject
     public function getSubjectHeadingText()
     {
         return $this->SubjectHeadingText;
+    }
+
+    /**
+     * @param string $SubjectSchemeName
+     */
+    public function setSubjectSchemeName(string $SubjectSchemeName): void
+    {
+        $this->SubjectSchemeName = $SubjectSchemeName;
     }
 
 }

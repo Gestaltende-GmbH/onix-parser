@@ -20,7 +20,18 @@ class Collection
      * @var TitleDetail
      */
     protected $TitleDetail;
-
+    /**
+     * CollectionIdentifier
+     *
+     * @var array|CollectionIdentifier[]
+     */
+    protected $CollectionIdentifier;
+    /**
+     * CollectionSequence
+     *
+     * @var array|CollectionSequence[]
+     */
+    protected $CollectionSequence;
     /**
      * Set CollectionType
      *
@@ -46,7 +57,7 @@ class Collection
     /**
      * Get CollectionType
      *
-     * @return CodeList
+     * @return CodeList148
      */
     public function getCollectionType()
     {
@@ -61,6 +72,46 @@ class Collection
     public function getTitleDetail()
     {
         return $this->TitleDetail;
+    }
+    /**
+     * Add CollectionIdentifier
+     *
+     * @param CollectionIdentifier $CollectionIdentifier
+     *
+     * @return void
+     */
+    public function setCollectionIdentifier(CollectionIdentifier $CollectionIdentifier)
+    {
+        $this->CollectionIdentifier[] = $CollectionIdentifier;
+    }
+    /**
+     * Get CollectionIdentifier
+     *
+     * @return array
+     */
+    public function getCollectionIdentifier()
+    {
+        return $this->CollectionIdentifier;
+    }
+    /**
+     * Add CollectionIdentifier
+     *
+     * @param CollectionSequence $CollectionSequence
+     *
+     * @return void
+     */
+    public function setCollectionSequence(CollectionSequence $CollectionSequence)
+    {
+        $this->CollectionSequence[] = $CollectionSequence;
+    }
+    /**
+     * Get CollectionIdentifier
+     *
+     * @return array
+     */
+    public function getCollectionSequence()
+    {
+        return $this->CollectionSequence;
     }
 
 }

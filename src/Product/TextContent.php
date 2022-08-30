@@ -76,10 +76,10 @@ class TextContent
     /**
      * Set Text
      *
-     * @param Text $Text
+     * @param string $Text
      * @return void
      */
-    public function setText(Text $Text)
+    public function setText(string $Text)
     {
         $this->Text = $Text;
     }

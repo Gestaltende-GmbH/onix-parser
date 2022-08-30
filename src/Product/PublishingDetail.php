@@ -24,6 +24,13 @@ class PublishingDetail
     protected $CountryOfPublication;
 
     /**
+     * CountryOfPublication
+     *
+     * @var array|\Ribal\Onix\Product\CopyrightStatement[]
+     */
+    protected $CopyrightStatement = [];
+
+    /**
      * Publisher
      *
      * @var Publisher
@@ -69,6 +76,7 @@ class PublishingDetail
      * Set CityOfPublication
      *
      * @param string|array $CityOfPublication
+     *
      * @return void
      */
     public function setCityOfPublication($CityOfPublication)
@@ -80,6 +88,7 @@ class PublishingDetail
      * Set CountryOfPublication
      *
      * @param CodeList91 $CountryOfPublication
+     *
      * @return void
      */
     public function setCountryOfPublication(CodeList91 $CountryOfPublication)
@@ -91,6 +100,7 @@ class PublishingDetail
      * Set Publisher
      *
      * @param Publisher $Publisher
+     *
      * @return void
      */
     public function setPublisher(Publisher $Publisher)
@@ -102,6 +112,7 @@ class PublishingDetail
      * Set PublishingStatus
      *
      * @param CodeList64 $PublishingStatus
+     *
      * @return void
      */
     public function setPublishingStatus(CodeList64 $PublishingStatus)
@@ -113,6 +124,7 @@ class PublishingDetail
      * Add new PublishingDate
      *
      * @param PublishingDate $PublishingDate
+     *
      * @return void
      */
     public function addPublishingDate(PublishingDate $PublishingDate)
@@ -124,6 +136,7 @@ class PublishingDetail
      * Add SalesRights
      *
      * @param SalesRights $SalesRights
+     *
      * @return void
      */
     public function addSalesRight(SalesRights $SalesRights)
@@ -135,6 +148,7 @@ class PublishingDetail
      * ROWSalesRightsType
      *
      * @param CodeList46 $ROWSalesRightsType
+     *
      * @return void
      */
     public function setROWSalesRightsType(CodeList46 $ROWSalesRightsType)
@@ -146,6 +160,7 @@ class PublishingDetail
      * Set Imprint
      *
      * @param Imprint $Imprint
+     *
      * @return void
      */
     public function setImprint(Imprint $Imprint)
@@ -237,6 +252,7 @@ class PublishingDetail
      * Remove new PublishingDate
      *
      * @param PublishingDate $PublishingDate
+     *
      * @return void
      */
     public function removePublishingDate(PublishingDate $PublishingDate)
@@ -247,9 +263,43 @@ class PublishingDetail
      * Remove SalesRights
      *
      * @param SalesRights $SalesRights
+     *
      * @return void
      */
     public function removeSalesRight(SalesRights $SalesRights)
+    {
+    }
+
+    /**
+     * Get CopyrightStatement
+     *
+     * @return array|\Ribal\Onix\Product\CopyrightStatement[]
+     */
+    public function getCopyrightStatement()
+    {
+        return $this->CopyrightStatement;
+    }
+
+    /**
+     * Set CopyrightStatement
+     *
+     * @param \Ribal\Onix\Product\CopyrightStatement $copyrightStatement
+     *
+     * @return void
+     */
+    public function addCopyrightStatement(CopyrightStatement $copyrightStatement)
+    {
+        $this->CopyrightStatement[] = $copyrightStatement;
+    }
+
+    /**
+     * Remove CopyrightStatement
+     *
+     * @param \Ribal\Onix\Product\CopyrightStatement $copyrightStatement
+     *
+     * @return void
+     */
+    public function removeCopyrightStatement(CopyrightStatement $copyrightStatement)
     {
     }
 

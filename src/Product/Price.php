@@ -82,9 +82,15 @@ class Price
     protected $Territory;
 
     /**
+     * @var PriceDate
+     */
+    protected $PriceDate;
+
+    /**
      * Set PriceType
      *
      * @param CodeList58 $PriceType
+     *
      * @return void
      */
     public function setPriceType(CodeList58 $PriceType)
@@ -96,6 +102,7 @@ class Price
      * Set PriceStatus
      *
      * @param CodeList61 $PriceStatus
+     *
      * @return void
      */
     public function setPriceStatus(CodeList61 $PriceStatus)
@@ -107,17 +114,19 @@ class Price
      * PriceAmount
      *
      * @param float $PriceAmount
+     *
      * @return void
      */
     public function setPriceAmount(string $PriceAmount)
     {
-        $this->PriceAmount = (float) $PriceAmount;
+        $this->PriceAmount = (float)$PriceAmount;
     }
 
     /**
      * Set CurrencyCode
      *
      * @param CodeList96 $CurrencyCode
+     *
      * @return void
      */
     public function setCurrencyCode(CodeList96 $CurrencyCode)
@@ -129,6 +138,7 @@ class Price
      * Set PrintedOnProduct
      *
      * @param CodeList174 $PrintedOnProduct
+     *
      * @return void
      */
     public function setPrintedOnProduct(CodeList174 $PrintedOnProduct)
@@ -140,6 +150,7 @@ class Price
      * Set PositionOnProduct
      *
      * @param CodeList142 $PositionOnProduct
+     *
      * @return void
      */
     public function setPositionOnProduct(CodeList142 $PositionOnProduct)
@@ -151,6 +162,7 @@ class Price
      * Set DiscountCoded
      *
      * @param DiscountCoded $DiscountCoded
+     *
      * @return void
      */
     public function setDiscountCoded(DiscountCoded $DiscountCoded)
@@ -162,6 +174,7 @@ class Price
      * Set Discount
      *
      * @param Discount $Discount
+     *
      * @return void
      */
     public function setDiscount(Discount $Discount)
@@ -173,6 +186,7 @@ class Price
      * Set Tax
      *
      * @param Tax $Tax
+     *
      * @return void
      */
     public function setTax(Tax $Tax)
@@ -184,6 +198,7 @@ class Price
      * Set Territory
      *
      * @param Territory $Territory
+     *
      * @return void
      */
     public function setTerritory(Territory $Territory)
@@ -210,7 +225,7 @@ class Price
     {
         return $this->PriceStatus;
     }
-    
+
     /**
      * PriceAmount
      *
@@ -290,5 +305,25 @@ class Price
     {
         return $this->Discount;
     }
+    /**
+     * Set PriceDate
+     *
+     * @param PriceDate $priceDate
+     *
+     * @return void
+     */
+    public function setPriceDate(PriceDate $priceDate)
+    {
+        $this->PriceDate = $priceDate;
+    }
 
+    /**
+     * Get PriceDate
+     *
+     * @return PriceDate
+     */
+    public function getPriceDate()
+    {
+        return $this->PriceDate;
+    }
 }

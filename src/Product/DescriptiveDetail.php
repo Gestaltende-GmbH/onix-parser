@@ -643,7 +643,7 @@ class DescriptiveDetail
     /**
      * Get Collections
      *
-     * @return array
+     * @return \Ribal\Onix\Product\Collection
      */
     public function getCollection()
     {

@@ -107,7 +107,7 @@ class Collection
     /**
      * Get CollectionIdentifier
      *
-     * @return array
+     * @return array|CollectionSequence[]
      */
     public function getCollectionSequence()
     {

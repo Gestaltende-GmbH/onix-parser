@@ -10,14 +10,14 @@ class RelatedProduct
     /**
      * Array of Product Relation Codes
      *
-     * @var array
+     * @var \Ribal\Onix\CodeList\CodeList51
      */
     protected $ProductRelationCode = [];
 
     /**
      * Array of ProductIdentifiers
      *
-     * @var array|ProductIdentifier
+     * @var ProductIdentifier
      */
     protected $ProductIdentifier = [];
     
@@ -27,9 +27,9 @@ class RelatedProduct
      * @param CodeList51 $ProductRelationCode
      * @return void
      */
-    public function addProductRelationCode(CodeList51 $ProductRelationCode)
+    public function setProductRelationCode(CodeList51 $ProductRelationCode)
     {
-        $this->ProductRelationCode[] = $ProductRelationCode;
+        $this->ProductRelationCode = $ProductRelationCode;
     }
 
     /**
@@ -38,15 +38,15 @@ class RelatedProduct
      * @param ProductIdentifier $ProductIdentifier
      * @return void
      */
-    public function addProductIdentifier(ProductIdentifier $ProductIdentifier)
+    public function setProductIdentifier(ProductIdentifier $ProductIdentifier)
     {
-        $this->ProductIdentifier[] = $ProductIdentifier;
+        $this->ProductIdentifier = $ProductIdentifier;
     }
 
     /**
      * Get ProductRelationCodes
      *
-     * @return array
+     * @return CodeList51
      */
     public function getProductRelationCode()
     {
@@ -56,7 +56,7 @@ class RelatedProduct
     /**
      * Get ProductIdentifiers
      *
-     * @return array
+     * @return \Ribal\Onix\Product\ProductIdentifier
      */
     public function getProductIdentifier()
     {

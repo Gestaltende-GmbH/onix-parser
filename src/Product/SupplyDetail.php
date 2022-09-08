@@ -49,10 +49,27 @@ class SupplyDetail
      * @var Price[]
      */
     protected $Price = [];
+
+    /**
+     * OrderQuantityMinimum
+     *
+     * @var int
+     */
+    protected $OrderQuantityMinimum;
+
     /**
      * @var \Ribal\Onix\CodeList\CodeList57
      */
     protected $UnpricedItemType;
+
+    /**
+     * @return int
+     */
+    public function getOrderQuantityMinimum()
+    {
+        return $this->OrderQuantityMinimum;
+    }
+
     /**
      * Set Supplier
      *
@@ -238,5 +255,13 @@ class SupplyDetail
     public function setUnpricedItemType(CodeList57 $UnpricedItemType)
     {
         $this->UnpricedItemType = $UnpricedItemType;
+    }
+
+    /**
+     * @param int $OrderQuantityMinimum
+     */
+    public function setOrderQuantityMinimum($OrderQuantityMinimum)
+    {
+        $this->OrderQuantityMinimum = $OrderQuantityMinimum;
     }
 }

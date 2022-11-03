@@ -23,19 +23,21 @@ class Collection
     /**
      * CollectionIdentifier
      *
-     * @var array|CollectionIdentifier[]
+     * @var array|\Ribal\Onix\Product\CollectionIdentifier[]
      */
-    protected $CollectionIdentifier;
+    protected $CollectionIdentifier = [];
     /**
      * CollectionSequence
      *
-     * @var array|CollectionSequence[]
+     * @var \Ribal\Onix\Product\CollectionSequence[]
      */
-    protected $CollectionSequence;
+    protected $CollectionSequence = [];
+
     /**
      * Set CollectionType
      *
      * @param string $CollectionType
+     *
      * @return void
      */
     public function setCollectionType(CodeList148 $CollectionType)
@@ -47,6 +49,7 @@ class Collection
      * Set TitleDetail
      *
      * @param TitleDetail $TitleDetail
+     *
      * @return void
      */
     public function setTitleDetail(TitleDetail $TitleDetail)
@@ -73,6 +76,7 @@ class Collection
     {
         return $this->TitleDetail;
     }
+
     /**
      * Add CollectionIdentifier
      *
@@ -80,19 +84,30 @@ class Collection
      *
      * @return void
      */
-    public function setCollectionIdentifier(CollectionIdentifier $CollectionIdentifier)
+    public function addCollectionIdentifier(CollectionIdentifier $CollectionIdentifier)
     {
         $this->CollectionIdentifier[] = $CollectionIdentifier;
     }
+
     /**
      * Get CollectionIdentifier
      *
-     * @return array
+     * @return array|CollectionIdentifier[]
      */
     public function getCollectionIdentifier()
     {
         return $this->CollectionIdentifier;
     }
+
+    public function hasCollectionIdentifier()
+    {
+        return count($this->CollectionIdentifier) > 0;
+    }
+
+    public function removeCollectionIdentifier(CollectionIdentifier $collectionIdentifier)
+    {
+    }
+
     /**
      * Add CollectionIdentifier
      *
@@ -100,10 +115,11 @@ class Collection
      *
      * @return void
      */
-    public function setCollectionSequence(CollectionSequence $CollectionSequence)
+    public function addCollectionSequence(CollectionSequence $CollectionSequence)
     {
         $this->CollectionSequence[] = $CollectionSequence;
     }
+
     /**
      * Get CollectionIdentifier
      *
@@ -114,4 +130,12 @@ class Collection
         return $this->CollectionSequence;
     }
 
+    public function hasCollectionSequence()
+    {
+        return count($this->CollectionSequence) > 0;
+    }
+
+    public function removeCollectionSequence(CollectionSequence $collectionSequence)
+    {
+    }
 }

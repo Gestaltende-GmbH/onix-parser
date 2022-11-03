@@ -10,7 +10,7 @@ class CollectionIdentifier
     /**
      * CollectionIDType
      *
-     * @var \Ribal\Onix\CodeList\CodeList13
+     * @var string
      */
     protected $CollectionIDType;
 
@@ -24,13 +24,12 @@ class CollectionIdentifier
     /**
      * Set CollectionIDType
      *
-     * @param string $NameIDType
+     * @param string $CollectionIDType
      *
-     * @return void
      */
-    public function setCollectionIDType(CodeList13 $NameIDType)
+    public function setCollectionIDType(CodeList13 $CollectionIDType)
     {
-        $this->CollectionIDType = $NameIDType;
+        $this->CollectionIDType = $CollectionIDType;
     }
 
     /**
@@ -38,9 +37,8 @@ class CollectionIdentifier
      *
      * @param string $IDValue
      *
-     * @return void
      */
-    public function setIDValue(string $IDValue)
+    public function setIDValue($IDValue)
     {
         $this->IDValue = $IDValue;
     }

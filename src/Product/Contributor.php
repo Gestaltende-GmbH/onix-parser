@@ -65,6 +65,35 @@ class Contributor
      */
     protected $PersonNameInverted;
     /**
+     * PersonNamemes
+     *
+     * @var string
+     */
+    protected $CorporateName;
+    /**
+     * PersonNameInverted
+     *
+     * @var string
+     */
+    protected $CorporateNameInverted;
+
+    /**
+     * @return string
+     */
+    public function getCorporateName()
+    {
+        return $this->CorporateName;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCorporateNameInverted()
+    {
+        return $this->CorporateNameInverted;
+    }
+
+    /**
      * Set SequenceNumber
      *
      * @param int $SequenceNumber

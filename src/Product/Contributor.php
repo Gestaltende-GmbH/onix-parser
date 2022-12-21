@@ -116,6 +116,22 @@ class Contributor
     }
 
     /**
+     * @param string $CorporateName
+     */
+    public function setCorporateName($CorporateName)
+    {
+        $this->CorporateName = $CorporateName;
+    }
+
+    /**
+     * @param string $CorporateNameInverted
+     */
+    public function setCorporateNameInverted($CorporateNameInverted)
+    {
+        $this->CorporateNameInverted = $CorporateNameInverted;
+    }
+
+    /**
      * Add NameIdentifier
      *
      * @param NameIdentifier $NameIdentifier
